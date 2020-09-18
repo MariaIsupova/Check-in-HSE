@@ -1,0 +1,317 @@
+/* source-sans-pro-300 - latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+        url('../fonts/source-sans-pro-v13-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/source-sans-pro-v13-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('../img/background_event.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #7DBAFF;
+}
+
+.form-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 92%;
+    min-height: 850px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.2);
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.block_exit {
+    display: block;
+    margin-left: auto;
+    margin-right: 8%;
+
+    width: 130px;
+    height: 40px;
+    background: none;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.exit {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.picture_exit {
+    vertical-align: middle;
+    position: absolute;
+    top: -3px;
+    left: 90px;
+    width: 47px;
+    height: 50px;
+}
+
+.field_name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-top: 10px;
+    margin-left: 12%;
+    margin-bottom: 30px;
+}
+
+.decor {
+    background: #FFB331;
+    width: 28%;
+    min-width: 150px;
+    height: 4px;
+    margin: 10px auto auto -3%;
+}
+
+.input-form {
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+}
+
+p {
+    margin: 20px 5px 20px 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    color: #1343B6;
+}
+
+textarea{
+    max-width: 700px;
+    width: 85%;
+    height: 160px;
+
+    padding: 10px;
+
+    border: 1px solid #1343B6;
+    border-radius: 10px;
+    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.5);
+    outline: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    /* text-align: center; */
+}
+
+input[name="l_or_s"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+input[name="l_or_s"]+label {
+    display: inline-flex;
+    align-items: center;
+    /* user-select: none; */
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+input[name="l_or_s"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid #7DBAFF;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+input[name="l_or_s"]:checked+label::before {
+    border-color: #1343B6;
+    background-color: #1343B6;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+input[name="l_or_s"]:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили при наведении курсора на радио */
+input[name="l_or_s"]:not(:disabled):not(:checked)+label:hover::before {
+    border: 2px solid #1343B6;
+}
+
+select[name="id_company"],
+select[name="id_meetup"]{
+    margin-top: 5px;
+    width: 85%;
+    max-width: 450px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 4px;
+    /* background: rgba(255, 255, 255); */
+    border: 1px solid rgba(255, 255, 255);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    outline: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+option {
+    position: relative;
+}
+
+option:after {
+    content: '<>';
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 2px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid rgba(255, 255, 255);
+    position: absolute;
+    pointer-events: none;
+}
+
+option:before {
+    content: '';
+    right: 6px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255);
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+
+input[name="lecture_name"],
+input[name="event_name"]{
+    margin-top: 5px;
+    max-width: 450px;
+    width: 85%;
+    height: 30px;
+}
+
+input[name="number_lecture"],
+input[name="number_stand"]{
+    margin-top: 5px;
+    width: 45px;
+    height: 30px;
+}
+
+input[name="date"]{
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #1343B6;
+    border-radius: 4px;
+    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.5);
+    outline: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-align: left;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+
+    width: 220px;
+    background: #1343B6;
+    border: 1px solid #1343B6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    outline: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #EDEDED;
+    text-align: center;
+}
+input[type="submit"]:hover,
+.picture:hover {
+    transform: scale(1.05);
+}
+
+.notification {
+    /*margin-top: 30px;*/
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.picture{
+    /*padding-right: 8px;*/
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+
+

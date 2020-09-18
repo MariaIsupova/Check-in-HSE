@@ -1,0 +1,249 @@
+/* source-sans-pro-300 - latin */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+        url('../fonts/source-sans-pro-v13-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/source-sans-pro-v13-latin-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('../img/background_event.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #7DBAFF;
+}
+
+.user_area {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 92%;
+    min-height: 800px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.2);
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.block_exit {
+    display: block;
+    margin-left: auto;
+    margin-right: 8%;
+
+    width: 130px;
+    height: 40px;
+    background: none;
+    position: relative;
+}
+
+a {
+    /*text-decoration: none;*/
+    transform: scale(1.05);
+}
+
+.exit {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.picture_exit {
+    vertical-align: middle;
+    position: absolute;
+    top: -3px;
+    left: 90px;
+    width: 47px;
+    height: 50px;
+}
+
+.picture_in {
+    vertical-align: middle;
+    position: absolute;
+    top: -3px;
+    left: 68px;
+    width: 47px;
+    height: 50px;
+}
+
+.title_name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    margin-right: 10%;
+}
+
+.decor {
+    background: #FFB331;
+    width: 28%;
+    height: 5px;
+    margin: 10px auto auto -5%;
+}
+
+/*.picture{*/
+/*    margin-top: 10px;*/
+/*    margin-left: 10%;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+.picture{
+    /*padding-right: 8px;*/
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.lect_info {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #1343B6;
+}
+
+.code_form {
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: 220px;
+
+    border: 1px solid #1343B6;
+    border-radius: 10px;
+    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.5);
+    outline: 0;
+}
+
+input[name="confirm"],
+input[name="confirm_participation"]{
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+
+    width: 150px;
+    background: #1343B6;
+    border: 1px solid #1343B6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    outline: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #EDEDED;
+    text-align: center;
+}
+
+.code {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.notification {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    /*text-decoration: none;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-list{
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+input[name="delete_lecture_or_stand"],
+input[name="change_lecture_or_stand"]{
+    margin: 10px 10px 20px 0px;
+    height:35px;
+    width: 250px;
+    margin: 10px;
+    
+    background: #FFFFFF;
+    border: 1.8px solid #1343B6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    color: #1343B6;
+}
+
+input[type="submit"]:hover,
+.picture:hover,
+input[name="delete_lecture_or_stand"]:hover,
+input[name="change_lecture_or_stand"]:hover{
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    transform: scale(1.05);
+} 
